@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_block_navigations",
+  "info": { "displayName": "Navigation", "icon": "dashboard" },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "lien": {
+      "type": "component",
+      "component": "composant.navigation-lien",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

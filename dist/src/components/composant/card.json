@@ -1,0 +1,30 @@
+{
+    "collectionName": "components_composant_cards",
+    "info": { "displayName": "card", "icon": "book" },
+    "options": {},
+    "attributes": {
+        "titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": false
+        },
+        "sous_titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": false
+        },
+        "icone": {
+            "type": "enumeration",
+            "enum": [
+                "location",
+                "time",
+                "drink",
+                "forks",
+                "tiktok",
+                "instagram",
+                "facebook"
+            ]
+        }
+    },
+    "config": {}
+}

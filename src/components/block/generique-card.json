@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_block_generique_cards",
+  "info": {
+    "displayName": "Generique_Card",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "Gros_Titre": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "sous_titre": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "cards": {
+      "type": "component",
+      "component": "composant.card",
+      "repeatable": true
+    },
+    "section": {
+      "type": "string"
+    },
+    "redirections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::redirection.redirection"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,50 @@
+{
+    "collectionName": "components_composant_liens",
+    "info": {
+        "displayName": "lien",
+        "icon": "attachment"
+    },
+    "options": {},
+    "attributes": {
+        "label": {
+            "type": "string"
+        },
+        "url": {
+            "type": "text",
+            "conditions": {
+                "visible": {
+                    "==": [
+                        {
+                            "var": "ajouter_image"
+                        },
+                        false
+                    ]
+                }
+            }
+        },
+        "icone": {
+            "type": "enumeration",
+            "enum": [
+                "location",
+                "time",
+                "drink",
+                "forks",
+                "tiktok",
+                "instagram",
+                "facebook"
+            ]
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files"
+            ]
+        },
+        "ajouter_image": {
+            "type": "boolean"
+        }
+    },
+    "config": {}
+}

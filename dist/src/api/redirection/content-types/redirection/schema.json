@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "redirections",
+    "info": {
+        "singularName": "redirection",
+        "pluralName": "redirections",
+        "displayName": "Redirection"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "content": {
+            "type": "component",
+            "component": "composant.lien",
+            "repeatable": false
+        },
+        "identifiant": {
+            "type": "string"
+        }
+    }
+}

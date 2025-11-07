@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_composant_listes",
+  "info": {
+    "displayName": "liste",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "ajouter_logo"
+            },
+            false
+          ]
+        }
+      },
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "item": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": true
+    },
+    "identifiant": {
+      "type": "string"
+    },
+    "ALERTE": {
+      "type": "string",
+      "private": true,
+      "default": "Si redirection ne pas ajouter d'item",
+      "required": false
+    },
+    "redirections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::redirection.redirection"
+    },
+    "logo": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "ajouter_logo"
+            },
+            true
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ajouter_logo": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_block_listes",
+  "info": { "displayName": "Liste", "icon": "dashboard" },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "component",
+      "component": "composant.liste",
+      "repeatable": true
+    },
+    "section": { "type": "string" }
+  },
+  "config": {}
+}

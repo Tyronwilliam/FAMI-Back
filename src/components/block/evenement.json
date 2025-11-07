@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_block_evenements",
+  "info": {
+    "displayName": "Evenement",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "Gros_Titre": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "evenements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::evenement.evenement"
+    }
+  },
+  "config": {}
+}

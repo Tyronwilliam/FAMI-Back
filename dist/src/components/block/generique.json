@@ -1,0 +1,66 @@
+{
+    "collectionName": "components_block_generiques",
+    "info": {
+        "displayName": "Generique",
+        "icon": "dashboard"
+    },
+    "options": {},
+    "attributes": {
+        "section": {
+            "type": "string"
+        },
+        "Gros_Titre": {
+            "type": "component",
+            "conditions": {
+                "visible": {
+                    "!=": [
+                        {
+                            "var": "remplacer_titre_par_logo"
+                        },
+                        true
+                    ]
+                }
+            },
+            "component": "composant.texte",
+            "repeatable": false
+        },
+        "sous_titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": true
+        },
+        "logo": {
+            "type": "media",
+            "conditions": {
+                "visible": {
+                    "==": [
+                        {
+                            "var": "remplacer_titre_par_logo"
+                        },
+                        true
+                    ]
+                }
+            },
+            "multiple": false,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "video_en_fond": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "videos"
+            ]
+        },
+        "remplacer_titre_par_logo": {
+            "type": "boolean"
+        },
+        "redirections": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::redirection.redirection"
+        }
+    },
+    "config": {}
+}

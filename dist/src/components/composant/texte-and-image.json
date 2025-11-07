@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_composant_texte_and_images",
+    "info": { "displayName": "texte_&_image", "icon": "dashboard" },
+    "options": {},
+    "attributes": {
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": ["images", "videos"]
+        },
+        "texte": { "type": "text" }
+    },
+    "config": {}
+}

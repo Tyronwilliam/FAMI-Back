@@ -1,0 +1,29 @@
+{
+    "collectionName": "components_composant_textes",
+    "info": { "displayName": "texte", "icon": "apps" },
+    "options": {},
+    "attributes": {
+        "label": { "type": "string" },
+        "type": {
+            "type": "enumeration",
+            "enum": ["h1", "h2", "h3", "h4", "h5", "h6", "span", "p"]
+        },
+        "icone": {
+            "type": "enumeration",
+            "conditions": {
+                "visible": { "==": [{ "var": "ajouter_icone" }, true] }
+            },
+            "enum": [
+                "location",
+                "time",
+                "drink",
+                "forks",
+                "tiktok",
+                "instagram",
+                "facebook"
+            ]
+        },
+        "ajouter_icone": { "type": "boolean", "default": false }
+    },
+    "config": {}
+}

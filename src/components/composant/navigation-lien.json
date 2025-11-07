@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_composant_navigation_liens",
+  "info": { "displayName": "navigation_lien", "icon": "attachment" },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" }
+  },
+  "config": {}
+}

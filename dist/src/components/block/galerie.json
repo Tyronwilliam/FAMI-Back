@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_block_galeries",
+    "info": { "displayName": "Galerie", "icon": "apps" },
+    "options": {},
+    "attributes": {
+        "images_video": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": ["images", "videos"]
+        },
+        "Gros_Titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": false
+        }
+    },
+    "config": {}
+}

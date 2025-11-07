@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_block_qui_somme_nous",
+  "info": { "displayName": "Text_image", "icon": "apps" },
+  "options": {},
+  "attributes": {
+    "section": { "type": "string" },
+    "Gros_Titre": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "content": {
+      "type": "component",
+      "component": "composant.texte-and-image",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

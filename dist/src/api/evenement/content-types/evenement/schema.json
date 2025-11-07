@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "evenements",
+    "info": {
+        "singularName": "evenement",
+        "pluralName": "evenements",
+        "displayName": "Evenement"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "horaire": {
+            "type": "datetime"
+        },
+        "content": {
+            "type": "component",
+            "component": "block.evenement",
+            "repeatable": false
+        },
+        "identifiant": {
+            "type": "string"
+        }
+    }
+}

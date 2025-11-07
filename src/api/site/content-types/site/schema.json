@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "General": {
+      "type": "dynamiczone",
+      "components": [
+        "block.generique",
+        "block.navigation",
+        "block.generique-card",
+        "block.qui-somme-nous",
+        "block.galerie",
+        "block.evenement",
+        "block.generique-complexe",
+        "block.liste"
+      ]
+    }
+  }
+}

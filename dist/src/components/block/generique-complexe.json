@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_block_generique_complexes",
+    "info": { "displayName": "Generique_complexe", "icon": "dashboard" },
+    "options": {},
+    "attributes": {
+        "content": { "type": "richtext" },
+        "section": { "type": "string" },
+        "Gros_Titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": false
+        }
+    },
+    "config": {}
+}

@@ -441,10 +441,10 @@ export interface ApiEvenementEvenement extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    content: Schema.Attribute.Component<'block.evenement', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Gros_Titre: Schema.Attribute.Component<'composant.texte', false>;
     horaire: Schema.Attribute.DateTime;
     identifiant: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -454,6 +454,7 @@ export interface ApiEvenementEvenement extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    sous_titre: Schema.Attribute.Component<'composant.texte', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -513,6 +514,7 @@ export interface ApiSiteSite extends Struct.SingleTypeSchema {
         'block.evenement',
         'block.generique-complexe',
         'block.liste',
+        'block.contact',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

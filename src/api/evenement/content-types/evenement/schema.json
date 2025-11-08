@@ -14,9 +14,14 @@
     "horaire": {
       "type": "datetime"
     },
-    "content": {
+    "Gros_Titre": {
       "type": "component",
-      "component": "block.evenement",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "sous_titre": {
+      "type": "component",
+      "component": "composant.texte",
       "repeatable": false
     },
     "identifiant": {

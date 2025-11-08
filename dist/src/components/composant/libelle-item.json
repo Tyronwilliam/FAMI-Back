@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_composant_libelle_items",
+    "info": {
+        "displayName": "libelle_item",
+        "icon": "archive"
+    },
+    "options": {},
+    "attributes": {
+        "content_titre": {
+            "type": "component",
+            "component": "composant.texte",
+            "repeatable": false
+        },
+        "content": {
+            "type": "component",
+            "component": "composant.flex-block",
+            "repeatable": true
+        },
+        "identifiant": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

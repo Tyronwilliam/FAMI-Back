@@ -21,7 +21,8 @@
                 "block.galerie",
                 "block.evenement",
                 "block.generique-complexe",
-                "block.liste"
+                "block.liste",
+                "block.contact"
             ]
         }
     }

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_block_contacts",
+  "info": {
+    "displayName": "Contact",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "Gros_titre": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "content": {
+      "type": "component",
+      "component": "composant.libelle-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

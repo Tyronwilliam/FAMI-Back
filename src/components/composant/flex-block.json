@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_composant_flex_blocks",
+  "info": {
+    "displayName": "flex_block",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "libelle": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": false
+    },
+    "item": {
+      "type": "component",
+      "component": "composant.texte",
+      "repeatable": true
+    },
+    "identifiant": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

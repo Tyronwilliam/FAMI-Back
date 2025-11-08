@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlockContact extends Struct.ComponentSchema {
+  collectionName: 'components_block_contacts';
+  info: {
+    displayName: 'Contact';
+    icon: 'dashboard';
+  };
+  attributes: {
+    content: Schema.Attribute.Component<'composant.libelle-item', true>;
+    Gros_titre: Schema.Attribute.Component<'composant.texte', false>;
+  };
+}
+
 export interface BlockEvenement extends Struct.ComponentSchema {
   collectionName: 'components_block_evenements';
   info: {
@@ -130,6 +142,32 @@ export interface ComposantCard extends Struct.ComponentSchema {
   };
 }
 
+export interface ComposantFlexBlock extends Struct.ComponentSchema {
+  collectionName: 'components_composant_flex_blocks';
+  info: {
+    displayName: 'flex_block';
+    icon: 'apps';
+  };
+  attributes: {
+    identifiant: Schema.Attribute.String;
+    item: Schema.Attribute.Component<'composant.texte', true>;
+    libelle: Schema.Attribute.Component<'composant.texte', false>;
+  };
+}
+
+export interface ComposantLibelleItem extends Struct.ComponentSchema {
+  collectionName: 'components_composant_libelle_items';
+  info: {
+    displayName: 'libelle_item';
+    icon: 'archive';
+  };
+  attributes: {
+    content: Schema.Attribute.Component<'composant.flex-block', true>;
+    content_titre: Schema.Attribute.Component<'composant.texte', false>;
+    identifiant: Schema.Attribute.String;
+  };
+}
+
 export interface ComposantLien extends Struct.ComponentSchema {
   collectionName: 'components_composant_liens';
   info: {
@@ -137,7 +175,7 @@ export interface ComposantLien extends Struct.ComponentSchema {
     icon: 'attachment';
   };
   attributes: {
-    ajouter_image: Schema.Attribute.Boolean;
+    ajouter_image: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     icone: Schema.Attribute.Enumeration<
       ['location', 'time', 'drink', 'forks', 'tiktok', 'instagram', 'facebook']
     >;
@@ -213,6 +251,7 @@ export interface ComposantTexteAndImage extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'block.contact': BlockContact;
       'block.evenement': BlockEvenement;
       'block.galerie': BlockGalerie;
       'block.generique': BlockGenerique;
@@ -222,6 +261,8 @@ declare module '@strapi/strapi' {
       'block.navigation': BlockNavigation;
       'block.qui-somme-nous': BlockQuiSommeNous;
       'composant.card': ComposantCard;
+      'composant.flex-block': ComposantFlexBlock;
+      'composant.libelle-item': ComposantLibelleItem;
       'composant.lien': ComposantLien;
       'composant.liste': ComposantListe;
       'composant.navigation-lien': ComposantNavigationLien;

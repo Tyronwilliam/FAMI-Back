@@ -15,6 +15,9 @@
       "type": "component",
       "component": "composant.libelle-item",
       "repeatable": true
+    },
+    "section": {
+      "type": "string"
     }
   },
   "config": {}

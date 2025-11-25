@@ -6,6 +6,9 @@
   },
   "options": {},
   "attributes": {
+    "section": {
+      "type": "string"
+    },
     "Gros_Titre": {
       "type": "component",
       "component": "composant.texte",
